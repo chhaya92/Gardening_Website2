@@ -1,0 +1,167 @@
+  
+  
+  
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+.page-header {
+    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(images/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/*** Service ***/
+.service-item {
+    position: relative;
+    text-align: center;
+}
+
+.service-item .service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service-item .service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: .3s;
+    z-index: -1;
+}
+
+.service-item:hover .service-img img {
+    transform: scale(1);
+}
+
+.service-item .service-text {
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.service-item:hover .service-text {
+    background: rgba(15, 66, 41, .6);
+}
+
+.service-item .service-text h4,
+.service-item .service-text p {
+    transition: .3;
+}
+
+.service-item:hover .service-text h4 {
+    color: #FFFFFF;
+}
+
+.service-item:hover .service-text p {
+    color: var(--light);
+}
+
+.service-item .service-text .btn-square {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    transition: .5s;
+}
+
+.service-item:hover .service-text .btn-square {
+    background: var(--light);
+}
+
+.service-item .service-text .btn {
+    width: 31px;
+    height: 31px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--dark);
+    background: var(--light);
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.service-item:hover .service-text .btn {
+    width: 112px;
+}
+
+
+/* ================================
+   📱 MOBILE VIEW (0px – 576px)
+   — Small screen phones
+================================ */
+@media only screen and (max-width: 576px) {
+
+    /* Service layout stacks vertically */
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Images become full width */
+    .service-img img {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Banner heading smaller */
+    #banner h1 {
+        font-size: 2rem;
+    }
+
+    /* Margin fix */
+    .service-text {
+        padding: 1.5rem;
+    }
+
+    /* Reduce container padding on mobile */
+    .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+/* ================================
+   📲 TABLET VIEW (577px – 992px)
+   — Tablets and small laptops
+================================ */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+
+    /* Service image moderately larger */
+    .service-img img {
+        width: 180px;
+        height: 100%;
+    }
+
+    /* Banner heading medium size */
+    #banner h1 {
+        font-size: 2.8rem;
+    }
+
+    /* More spacing */
+    .service-text {
+        padding: 1.8rem;
+    }
+}
+
+/* ================================
+   💻 LAPTOP + DESKTOP VIEW (992px+)
+================================ */
+@media only screen and (min-width: 992px) {
+
+    /* Desktop big headings */
+    #banner h1 {
+        font-size: 3.5rem;
+    }
+
+    .service-img img {
+        width: 220px;
+        height: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+
+.page-header {
+    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(images/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}

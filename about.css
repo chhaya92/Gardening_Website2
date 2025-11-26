@@ -1,0 +1,29 @@
+
+
+.page-header {
+    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(images/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+#stats-section {
+  background: url('images/carousel-1.jpg') no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+}
+
+.stats-section .overlay {
+  background-color: rgba(0, 64, 32, 0.5); 
+  width: 100%;
+  height: 100%;
+}
+
+#stats-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.stats-section p {
+  font-size: 24px;
+  margin-top: 5px;
+}
